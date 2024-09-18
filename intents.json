@@ -1,0 +1,117 @@
+{
+    "intents": [
+    {
+        "tag": "saludo",
+        "patterns": [
+        "Hola",
+        "Buenos días",
+        "Buenas tardes",
+        "Qué tal"
+        ],
+        "responses": [
+        "¡Hola! ¿En qué te puedo ayudar?",
+        "¡Hola! Bienvenido a Logeao, ¿cómo te puedo asistir hoy?"
+        ]
+    },
+    {
+        "tag": "despedida",
+        "patterns": [
+        "Adiós",
+        "Hasta luego",
+        "Nos vemos",
+        "Chao"
+        ],
+        "responses": [
+        "¡Adiós! Que tengas un buen día.",
+        "Gracias por contactarnos, ¡hasta pronto!"
+        ]
+    },
+    {
+        "tag": "informacion_servicios",
+        "patterns": [
+        "¿Qué servicios ofrecen?",
+        "Cuéntame sobre sus servicios",
+        "¿Qué hacen en Logeao?",
+        "¿Cómo pueden ayudarme?"
+        ],
+        "responses": [
+        "En Logeao nos especializamos en la creación de landing pages personalizadas para pequeños negocios. ¿Te gustaría saber más detalles?",
+        "Ofrecemos creación de páginas web, optimización de presencia online, y mucho más."
+        ]
+    },
+    {
+        "tag": "precios",
+    "patterns": [
+        "¿Cuánto cuesta una landing page?",
+        "Dime los precios de sus servicios",
+        "¿Qué precio tiene el servicio?",
+        "¿Cuál es el costo de sus planes?"
+        ],
+        "responses": [
+        "Nuestros planes tienen un costo único que varía según las necesidades del cliente. Los precios empiezan desde [monto] por landing page. ¿Te gustaría más detalles?"
+        ]
+    },
+    {
+        "tag": "mantenimiento",
+        "patterns": [
+        "¿Ofrecen mantenimiento?",
+        "¿Tienen servicio de mantenimiento?",
+        "¿Cómo es el plan de mantenimiento?",
+        "Quiero saber sobre el mantenimiento de la página"
+        ],
+        "responses": [
+        "Sí, ofrecemos un plan opcional de mantenimiento para garantizar que tu landing page esté siempre actualizada. ¿Te gustaría más información?"
+        ]
+    },
+    {
+        "tag": "contacto",
+        "patterns": [
+        "¿Cómo puedo contactarlos?",
+        "Quiero hablar con un asesor",
+        "¿Tienen algún número de contacto?",
+        "Dame su correo electrónico"
+        ],
+        "responses": [
+        "Puedes contactarnos a través de nuestro correo electrónico: contacto@logeao.com o llamarnos al [número de contacto]. ¡Estamos aquí para ayudarte!"
+        ]
+    },
+    {
+        "tag": "horario",
+        "patterns": [
+        "¿Cuál es su horario?",
+        "¿En qué horario trabajan?",
+        "¿A qué hora están disponibles?",
+        "Horarios de atención"
+        ],
+        "responses": [
+        "Nuestro horario de atención es de lunes a viernes de 9:00 AM a 6:00 PM. ¿Te gustaría agendar una reunión?"
+        ]
+    },
+    {
+        "tag": "agradecimiento",
+        "patterns": [
+        "Gracias",
+        "Muchas gracias",
+        "Te agradezco",
+        "Gracias por tu ayuda"
+        ],
+        "responses": [
+        "¡Con gusto! Si necesitas algo más, no dudes en preguntar.",
+        "¡Estamos para servirte! ¿En qué más te puedo ayudar?"
+        ]
+    },
+    {
+        "tag": "error",
+        "patterns": [
+        "No entiendo",
+        "No sé qué hacer",
+        "No me queda claro",
+        "¿Puedes repetir?"
+        ],
+        "responses": [
+        "Disculpa, no logré entenderte. ¿Podrías reformular tu pregunta?",
+        "Lo siento, no estoy seguro de haber entendido. ¿Podrías darme más detalles?"
+        ]
+    }
+    ]
+}
