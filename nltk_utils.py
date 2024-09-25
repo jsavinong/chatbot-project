@@ -37,13 +37,13 @@ def bag_of_words(tokenized_sentence, words):
     # initialize bag with 0 for each word
     bag = np.zeros(len(words), dtype=np.float32)
     for idx, w in enumerate(words):
-        print(w, sentence_words )
+        # print(w, sentence_words )
         if w in sentence_words: 
             bag[idx] = 1
 
     return bag
 
-sentence = ["Hola", "En", "qué", "te", "puedo", "ayudar"]
-words = ["Hola", "amigo", "qué", "puede", "hacer", "para", "ayudarte"]
-bow = bag_of_words(sentence, words)
-print(bow)
+# sentence = ["Hola", "En", "qué", "te", "puedo", "ayudar"]
+# words = ["Hola", "amigo", "qué", "puede", "hacer", "para", "ayudarte"]
+# bow = bag_of_words(sentence, words)
+# print(bow)
