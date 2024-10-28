@@ -1,4 +1,4 @@
-import torch
+import checkcuda
 import torch.nn as nn
 
 class NeuralNet(nn.Module):

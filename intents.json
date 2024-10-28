@@ -1,117 +1,194 @@
 {
     "intents": [
-    {
-        "tag": "saludo",
-        "patterns": [
-        "Hola",
-        "Buenos días",
-        "Buenas tardes",
-        "Qué tal"
-        ],
-        "responses": [
-        "¡Hola! ¿En qué te puedo ayudar?",
-        "¡Hola! Bienvenido a Logeao, ¿cómo te puedo asistir hoy?"
-        ]
-    },
-    {
-        "tag": "despedida",
-        "patterns": [
-        "Adiós",
-        "Hasta luego",
-        "Nos vemos",
-        "Chao"
-        ],
-        "responses": [
-        "¡Adiós! Que tengas un buen día.",
-        "Gracias por contactarnos, ¡hasta pronto!"
-        ]
-    },
-    {
-        "tag": "informacion_servicios",
-        "patterns": [
-        "¿Qué servicios ofrecen?",
-        "Cuéntame sobre sus servicios",
-        "¿Qué hacen en Logeao?",
-        "¿Cómo pueden ayudarme?"
-        ],
-        "responses": [
-        "En Logeao nos especializamos en la creación de landing pages personalizadas para pequeños negocios. ¿Te gustaría saber más detalles?",
-        "Ofrecemos creación de páginas web, optimización de presencia online, y mucho más."
-        ]
-    },
-    {
-        "tag": "precios",
-    "patterns": [
-        "¿Cuánto cuesta una landing page?",
-        "Dime los precios de sus servicios",
-        "¿Qué precio tiene el servicio?",
-        "¿Cuál es el costo de sus planes?"
-        ],
-        "responses": [
-        "Nuestros planes tienen un costo único que varía según las necesidades del cliente. Los precios empiezan desde [monto] por landing page. ¿Te gustaría más detalles?"
-        ]
-    },
-    {
-        "tag": "mantenimiento",
-        "patterns": [
-        "¿Ofrecen mantenimiento?",
-        "¿Tienen servicio de mantenimiento?",
-        "¿Cómo es el plan de mantenimiento?",
-        "Quiero saber sobre el mantenimiento de la página"
-        ],
-        "responses": [
-        "Sí, ofrecemos un plan opcional de mantenimiento para garantizar que tu landing page esté siempre actualizada. ¿Te gustaría más información?"
-        ]
-    },
-    {
-        "tag": "contacto",
-        "patterns": [
-        "¿Cómo puedo contactarlos?",
-        "Quiero hablar con un asesor",
-        "¿Tienen algún número de contacto?",
-        "Dame su correo electrónico"
-        ],
-        "responses": [
-        "Puedes contactarnos a través de nuestro correo electrónico: contacto@logeao.com o llamarnos al [número de contacto]. ¡Estamos aquí para ayudarte!"
-        ]
-    },
-    {
-        "tag": "horario",
-        "patterns": [
-        "¿Cuál es su horario?",
-        "¿En qué horario trabajan?",
-        "¿A qué hora están disponibles?",
-        "Horarios de atención"
-        ],
-        "responses": [
-        "Nuestro horario de atención es de lunes a viernes de 9:00 AM a 6:00 PM. ¿Te gustaría agendar una reunión?"
-        ]
-    },
-    {
-        "tag": "agradecimiento",
-        "patterns": [
-        "Gracias",
-        "Muchas gracias",
-        "Te agradezco",
-        "Gracias por tu ayuda"
-        ],
-        "responses": [
-        "¡Con gusto! Si necesitas algo más, no dudes en preguntar.",
-        "¡Estamos para servirte! ¿En qué más te puedo ayudar?"
-        ]
-    },
-    {
-        "tag": "error",
-        "patterns": [
-        "No entiendo",
-        "No sé qué hacer",
-        "No me queda claro",
-        "¿Puedes repetir?"
-        ],
-        "responses": [
-        "Disculpa, no logré entenderte. ¿Podrías reformular tu pregunta?",
-        "Lo siento, no estoy seguro de haber entendido. ¿Podrías darme más detalles?"
-        ]
-    }
+        {
+            "tag": "saludo",
+            "patterns": [
+                "Hola",
+                "Buenos días",
+                "Buenas tardes",
+                "Qué tal",
+                "Hey",
+                "¿Cómo estás?"
+            ],
+            "responses": [
+                "¡Hola! ¿En qué te puedo ayudar?",
+                "¡Hola! Bienvenido a Logeao, ¿cómo te puedo asistir hoy?",
+                "¡Hey! Estoy aquí para ayudarte. ¿En qué necesitas apoyo?"
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "Adiós",
+                "Hasta luego",
+                "Nos vemos",
+                "Chao",
+                "Me voy",
+                "Hasta pronto"
+            ],
+            "responses": [
+                "¡Adiós! Que tengas un buen día.",
+                "Gracias por contactarnos, ¡hasta pronto!",
+                "¡Chao! Recuerda que estamos aquí si necesitas algo más."
+            ]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": [
+                "Gracias",
+                "Muchas gracias",
+                "Te agradezco",
+                "Gracias por tu ayuda",
+                "Eres muy amable",
+                "Aprecio tu ayuda"
+            ],
+            "responses": [
+                "¡Con gusto! Si necesitas algo más, no dudes en preguntar.",
+                "¡Estamos para servirte! ¿En qué más te puedo ayudar?",
+                "¡De nada! Siempre estamos aquí para ayudarte."
+            ]
+        },
+        {
+            "tag": "error",
+            "patterns": [
+                "No entiendo",
+                "No sé qué hacer",
+                "No me queda claro",
+                "¿Puedes repetir?",
+                "No comprendo",
+                "¿Qué significa esto?"
+            ],
+            "responses": [
+                "Disculpa, no logré entenderte. ¿Podrías reformular tu pregunta?",
+                "Lo siento, no estoy seguro de haber entendido. ¿Podrías darme más detalles?",
+                "Perdón, no comprendí eso. ¿Te importaría explicarlo de nuevo?"
+            ]
+        },
+        {
+            "tag": "confirmacion",
+            "patterns": [
+                "¿Estás ahí?",
+                "¿Sigues ahí?",
+                "¿Me puedes escuchar?",
+                "¿Me ayudas?"
+            ],
+            "responses": [
+                "Sí, estoy aquí para ayudarte. ¿En qué te puedo asistir?",
+                "¡Claro! Estoy aquí, ¿cómo te puedo ayudar?",
+                "Aquí estoy, listo para responder tus preguntas."
+            ]
+        },
+        {
+            "tag": "contacto",
+            "patterns": [
+                "¿Cómo puedo contactar con Logeao?",
+                "¿Dónde puedo escribirles?",
+                "Quiero hablar con alguien de Logeao",
+                "¿Tienen correo de contacto?"
+            ],
+            "responses": [
+                "Puedes contactarnos a través de nuestro formulario de contacto en la página web o enviarnos un correo electrónico. ¡Estaremos encantados de ayudarte!",
+                "Nuestro correo de contacto está disponible en la web. Si necesitas asistencia, no dudes en escribirnos.",
+                "Estamos aquí para ayudarte; puedes usar el formulario de contacto en nuestra web o enviarnos un mensaje."
+            ]
+        },
+        {
+            "tag": "horario_atencion",
+            "patterns": [
+                "¿Cuáles son sus horarios de atención?",
+                "¿Cuándo están disponibles?",
+                "¿Puedo contactarlos en cualquier momento?",
+                "¿Tienen horario de atención?"
+            ],
+            "responses": [
+                "Nuestro horario de atención es de lunes a viernes de 9:00 a.m. a 6:00 p.m.",
+                "Estamos disponibles de lunes a viernes, de 9 a.m. a 6 p.m. para ayudarte en lo que necesites.",
+                "Nuestro horario es de lunes a viernes, de 9 a.m. a 6 p.m. ¿Cómo podemos ayudarte hoy?"
+            ]
+        },
+        {
+            "tag": "que_es_logeao",
+            "patterns": [
+                "¿Qué es Logeao?",
+                "¿Qué servicios ofrece Logeao?",
+                "Cuéntame sobre Logeao",
+                "¿Qué hace Logeao?"
+            ],
+            "responses": [
+                "Logeao es una empresa especializada en la creación de sitios web y landing pages diseñadas para mejorar la presencia en línea de negocios, con un enfoque especial en emprendedores y pequeñas empresas. Ofrecemos desde páginas básicas hasta soluciones completamente personalizadas, optimización SEO, integración con herramientas de CRM, y más."
+            ]
+        },
+        {
+            "tag": "que_es_landing_page",
+            "patterns": [
+                "¿Qué es una landing page?",
+                "¿Para qué sirve una landing page?",
+                "Explica una landing page",
+                "¿Qué diferencia tiene una landing page de un sitio web?"
+            ],
+            "responses": [
+                "Una landing page o página de aterrizaje es una página web diseñada específicamente para convertir visitantes en clientes o leads. Normalmente se utiliza para campañas de marketing o publicidad, y su objetivo es captar la atención del usuario y dirigirlo a realizar una acción concreta, como rellenar un formulario, registrarse o realizar una compra. Es una herramienta muy efectiva para aumentar conversiones."
+            ]
+        },
+        {
+            "tag": "tiempo_entrega",
+            "patterns": [
+                "¿Cuál es el tiempo de entrega de una landing page?",
+                "¿Cuánto tiempo toma hacer una landing page?",
+                "¿Cuánto tarda la entrega?",
+                "¿En cuánto tiempo entregan una landing page?"
+            ],
+            "responses": [
+                "El tiempo de entrega de una landing page en Logeao depende del plan seleccionado y de la complejidad del proyecto. Nuestro tiempo estándar va desde 2 semanas hasta 5 días. Sin embargo, el tiempo de entrega comienza a contar una vez tengamos todos los elementos necesarios, como imágenes, colores y logo. Podemos gestionar estos recursos, pero esto podría aumentar el tiempo de entrega y el costo."
+            ]
+        },
+        {
+            "tag": "optimizacion_dispositivos",
+            "patterns": [
+                "¿Incluyen optimización para dispositivos móviles?",
+                "¿La página será responsive?",
+                "¿Funciona en móviles?",
+                "¿Está optimizada para tabletas y móviles?"
+            ],
+            "responses": [
+                "Sí, todas nuestras landing pages son 100% responsive y están optimizadas para funcionar perfectamente en todos los dispositivos: móviles, tablets y computadoras."
+            ]
+        },
+        {
+            "tag": "mantenimiento",
+            "patterns": [
+                "¿Ofrecen mantenimiento después de entregar la página?",
+                "¿Tienen soporte después de la entrega?",
+                "¿Puedo obtener ayuda después de la entrega?",
+                "¿Incluye mantenimiento?"
+            ],
+            "responses": [
+                "Sí, todos nuestros planes incluyen un período de soporte y mantenimiento después de la entrega de la página. El Plan Esencial ofrece 30 días, mientras que los Planes Profesional y Avanzado incluyen 90 días. Si necesitas soporte adicional después de este período, ofrecemos un servicio de mantenimiento ajustado a tus necesidades."
+            ]
+        },
+        {
+            "tag": "modificar_contenido",
+            "patterns": [
+                "¿Puedo modificar el contenido por mi cuenta?",
+                "¿Es fácil de actualizar?",
+                "¿Puedo cambiar textos e imágenes?",
+                "¿Es posible hacer cambios sin ayuda?"
+            ],
+            "responses": [
+                "Sí, en Logeao diseñamos nuestras páginas con un sistema de gestión de contenido fácil de usar, permitiéndote realizar actualizaciones básicas como cambiar textos o imágenes sin conocimientos técnicos avanzados. Para cambios más complejos, te recomendamos contactarnos para evitar problemas de diseño o funcionalidad."
+            ]
+        },
+        {
+            "tag": "iniciar_trabajo",
+            "patterns": [
+                "¿Cómo empiezo a trabajar con Logeao?",
+                "¿Cómo contacto a Logeao?",
+                "¿Cómo inicio el proceso?",
+                "Quiero comenzar, ¿qué hago?"
+            ],
+            "responses": [
+                "¡Es muy fácil! Solo necesitas ponerte en contacto con nosotros a través de nuestro formulario de contacto o por correo electrónico. Nos encargaremos de recopilar la información inicial y te guiaremos en todo el proceso para asegurarnos de que obtengas una página web que se ajuste a tus necesidades."
+            ]
+        }
     ]
 }
