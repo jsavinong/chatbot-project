@@ -26,15 +26,9 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Chateao"
-print("¡Vamos a conversar! (digita 'salir' para cerrar)")
-while True:
-    # sentence = "do you use credit cards?"
-    sentence = input("Tu: ")
-    if sentence == "salir":
-        break
 
-
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -49,10 +43,16 @@ while True:
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-            print(f"{bot_name}: No entiendo lo que quieres decir...")
+                return random.choice(intent['responses'])
+    return "No entiendo lo que quieres decir..."
 
+if __name__ == "__main__":
+    print("¡Vamos a conversar! (digita 'salir' para cerrar)")
+    while True:
+        # sentence = "do you use credit cards?"
+        sentence = input("Tú: ")
+        if sentence == "salir":
+            break
 
-
-    
+        resp = get_response(sentence)
+        print(resp)
