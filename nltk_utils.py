@@ -42,8 +42,3 @@ def bag_of_words(tokenized_sentence, words):
             bag[idx] = 1
 
     return bag
-
-# sentence = ["Hola", "En", "qué", "te", "puedo", "ayudar"]
-# words = ["Hola", "amigo", "qué", "puede", "hacer", "para", "ayudarte"]
-# bow = bag_of_words(sentence, words)
-# print(bow)
